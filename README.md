@@ -24,7 +24,7 @@ sudo suricata-update
 27/6/2024 -- 21:51:21 - <Info> -- Writing rules to /var/lib/suricata/rules/suricata.rules: total: 50657; enabled: 38545; added: 50657; removed 0; modified: 0
 ```
 
-Проверка установки Surikata
+Проверка установки **Surikata**
 
 ```sh
 sudo systemctl status suricata
@@ -106,6 +106,13 @@ sudo nmap -sS 10.159.86.98
 sudo nmap -sV 10.159.86.98
 ```
 ![image](https://github.com/killakazzak/13-03-sdb-hw/assets/32342205/6eaa40f6-3cd0-451e-a055-283e471980ba)
+
+
+Проверка срабатывания **Surikata**
+
+![image](https://github.com/killakazzak/13-03-sdb-hw/assets/32342205/f9e223df-6a35-41a5-8a27-6d0f966b6c60)
+
+Проверка срабатывания **Fail2Ban**
 
 ------
 
