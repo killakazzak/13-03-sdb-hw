@@ -27,7 +27,17 @@ sudo suricata-update
 Проверка установки Surikata
 
 ```sh
-sudo systemctl status suricata
+root@ubuntu22-client:~# sudo systemctl status suricata
+● suricata.service - LSB: Next Generation IDS/IPS
+     Loaded: loaded (/etc/init.d/suricata; generated)
+     Active: active (exited) since Thu 2024-06-27 21:51:10 UTC; 1min 52s ago
+       Docs: man:systemd-sysv-generator(8)
+    Process: 2192 ExecStart=/etc/init.d/suricata start (code=exited, status=0/SUCCESS)
+        CPU: 193ms
+
+Jun 27 21:51:10 ubuntu22-client systemd[1]: Starting LSB: Next Generation IDS/IPS...
+Jun 27 21:51:10 ubuntu22-client suricata[2192]: Starting suricata in IDS (af-packet) mode... done.
+Jun 27 21:51:10 ubuntu22-client systemd[1]: Started LSB: Next Generation IDS/IPS.
 ```
 
 
