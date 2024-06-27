@@ -143,8 +143,28 @@ sudo nmap -sV 10.159.86.98
 ```sh
 hydra -L user.txt -P pass.txt 10.159.86.98 ssh
 ```
+![image](https://github.com/killakazzak/13-03-sdb-hw/assets/32342205/f7f76319-f86d-44fc-be99-04a3e4a2d0d6)
+
 
 Проверка срабатывания **Fail2Ban**
 
 ![image](https://github.com/killakazzak/13-03-sdb-hw/assets/32342205/c7972d39-5708-4d69-8d36-e47ced0d60b4)
+
+
+Попытка подключиться по SSH
+
+```sh
+ssh denis@10.159.86.98
+```
+![image](https://github.com/killakazzak/13-03-sdb-hw/assets/32342205/7eeb8e94-a721-4032-97d2-9d73fb02cd94)
+
+Отключаем **fail2ban**
+
+```sh
+systemctl stop fail2ban.service && systemctl status fail2ban.service
+```
+![image](https://github.com/killakazzak/13-03-sdb-hw/assets/32342205/25ab5065-9094-4c8f-855f-3f8fe1a37495)
+
+
+
 
