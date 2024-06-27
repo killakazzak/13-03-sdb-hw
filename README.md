@@ -27,18 +27,9 @@ sudo suricata-update
 Проверка установки Surikata
 
 ```sh
-root@ubuntu22-client:~# sudo systemctl status suricata
-● suricata.service - LSB: Next Generation IDS/IPS
-     Loaded: loaded (/etc/init.d/suricata; generated)
-     Active: active (exited) since Thu 2024-06-27 21:51:10 UTC; 1min 52s ago
-       Docs: man:systemd-sysv-generator(8)
-    Process: 2192 ExecStart=/etc/init.d/suricata start (code=exited, status=0/SUCCESS)
-        CPU: 193ms
-
-Jun 27 21:51:10 ubuntu22-client systemd[1]: Starting LSB: Next Generation IDS/IPS...
-Jun 27 21:51:10 ubuntu22-client suricata[2192]: Starting suricata in IDS (af-packet) mode... done.
-Jun 27 21:51:10 ubuntu22-client systemd[1]: Started LSB: Next Generation IDS/IPS.
+sudo systemctl status suricata
 ```
+![image](https://github.com/killakazzak/13-03-sdb-hw/assets/32342205/cd5fdc82-6206-43c9-81c9-e503916be5ce)
 
 Настройка Suricata
 
@@ -62,12 +53,9 @@ sudo apt install fail2ban
 
 ```sh
 root@ubuntu22-client:~# sudo systemctl status fail2ban
-
-○ fail2ban.service - Fail2Ban Service
-     Loaded: loaded (/lib/systemd/system/fail2ban.service; disabled; vendor preset: enabled)
-     Active: inactive (dead)
-       Docs: man:fail2ban(1)
 ```
+![image](https://github.com/killakazzak/13-03-sdb-hw/assets/32342205/33064a20-c39a-4a34-b3be-9526a8391756)
+
 
 
 2. Подготовка системы злоумышленника: установите **nmap** и **thc-hydra** либо скачайте и установите **Kali linux**.
