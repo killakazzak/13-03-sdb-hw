@@ -58,6 +58,16 @@ rule-files:
 sudo apt install fail2ban
 ```
 
+Проверка установки **Fail2Ban**
+
+```sh
+root@ubuntu22-client:~# sudo systemctl status fail2ban
+
+○ fail2ban.service - Fail2Ban Service
+     Loaded: loaded (/lib/systemd/system/fail2ban.service; disabled; vendor preset: enabled)
+     Active: inactive (dead)
+       Docs: man:fail2ban(1)
+```
 
 
 2. Подготовка системы злоумышленника: установите **nmap** и **thc-hydra** либо скачайте и установите **Kali linux**.
