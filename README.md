@@ -7,7 +7,7 @@
 - установите **Suricata**,
 - установите **Fail2Ban**.
 
-Установка Surikata
+Установка **Surikata**
 
 ```sh
 sudo apt install software-properties-common
@@ -51,6 +51,13 @@ default-rule-path: /var/lib/suricata/rules
 rule-files:
 - suricata.rules
 ```
+
+Установка **Fail2Ban**
+
+```sh
+sudo apt install fail2ban
+```
+
 
 
 2. Подготовка системы злоумышленника: установите **nmap** и **thc-hydra** либо скачайте и установите **Kali linux**.
