@@ -93,6 +93,32 @@ root@ubuntu22-client:~# sudo systemctl status fail2ban
 
 *В качестве ответа пришлите события, которые попали в логи Suricata и Fail2Ban, прокомментируйте результат.*
 
+### Решение Задание 1
+
+
+```sh
+sudo nmap -sA 10.159.86.98
+```
+![image](https://github.com/killakazzak/13-03-sdb-hw/assets/32342205/5c09ccdf-49e1-4dea-b020-f61d25b2a35d)
+
+
+```sh
+sudo nmap -sT 10.159.86.98
+```
+![image](https://github.com/killakazzak/13-03-sdb-hw/assets/32342205/c3c44384-ed75-458b-8682-218d40b92ddb)
+
+
+```sh
+sudo nmap -sS 10.159.86.98
+```
+![image](https://github.com/killakazzak/13-03-sdb-hw/assets/32342205/a3b4a300-0151-41a9-888f-9386c525626d)
+
+
+```sh
+sudo nmap -sV 10.159.86.98
+```
+![image](https://github.com/killakazzak/13-03-sdb-hw/assets/32342205/6eaa40f6-3cd0-451e-a055-283e471980ba)
+
 ------
 
 ### Задание 2
@@ -115,3 +141,6 @@ root@ubuntu22-client:~# sudo systemctl status fail2ban
 -  установить **enabled**  в **true**.
 
 Дополнительная информация по **Fail2Ban**:https://putty.org.ru/articles/fail2ban-ssh.html.
+
+### Решение Задание 2
+
