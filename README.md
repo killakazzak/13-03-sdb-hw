@@ -40,6 +40,17 @@ Jun 27 21:51:10 ubuntu22-client suricata[2192]: Starting suricata in IDS (af-pac
 Jun 27 21:51:10 ubuntu22-client systemd[1]: Started LSB: Next Generation IDS/IPS.
 ```
 
+Настройка Suricata
+
+```sh
+sudo vim /etc/suricata/suricata.yaml
+EXTERNAL_NET: “any”
+af-packet:
+interface: ens160
+default-rule-path: /var/lib/suricata/rules
+rule-files:
+- suricata.rules
+```
 
 
 2. Подготовка системы злоумышленника: установите **nmap** и **thc-hydra** либо скачайте и установите **Kali linux**.
