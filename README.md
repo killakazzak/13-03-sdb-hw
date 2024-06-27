@@ -7,6 +7,31 @@
 - установите **Suricata**,
 - установите **Fail2Ban**.
 
+Установка Surikata
+
+```sh
+sudo apt install software-properties-common
+sudo apt update
+sudo add-apt-repository ppa:oisf/suricata-stable
+sudo apt install suricata
+```
+Обновление базы сигнатур
+
+```sh
+sudo suricata-update
+```
+```
+27/6/2024 -- 21:51:21 - <Info> -- Writing rules to /var/lib/suricata/rules/suricata.rules: total: 50657; enabled: 38545; added: 50657; removed 0; modified: 0
+```
+
+Проверка установки Surikata
+
+```sh
+sudo systemctl status suricata
+```
+
+
+
 2. Подготовка системы злоумышленника: установите **nmap** и **thc-hydra** либо скачайте и установите **Kali linux**.
 
 Обе системы должны находится в одной подсети.
