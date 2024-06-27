@@ -112,7 +112,6 @@ sudo nmap -sV 10.159.86.98
 
 ![image](https://github.com/killakazzak/13-03-sdb-hw/assets/32342205/f9e223df-6a35-41a5-8a27-6d0f966b6c60)
 
-Проверка срабатывания **Fail2Ban**
 
 ------
 
@@ -144,4 +143,8 @@ sudo nmap -sV 10.159.86.98
 ```sh
 hydra -L user.txt -P pass.txt 10.159.86.98 ssh
 ```
+
+Проверка срабатывания **Fail2Ban**
+
+![image](https://github.com/killakazzak/13-03-sdb-hw/assets/32342205/c7972d39-5708-4d69-8d36-e47ced0d60b4)
 
